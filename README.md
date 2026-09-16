@@ -16,10 +16,10 @@ codex plugin add rtk-rewrite@seamusmore
 
 | 插件 | 版本 | 用途 |
 |---|---|---|
-| [rtk-rewrite](https://github.com/seamusmore/rtk-rewrite) | 1.3.3 | 原生 PreToolUse hook 自动通过 RTK 改写简单终端命令；要求 Python 3.10+ 和 PATH 中的 RTK；Windows 使用 PowerShell 和 RTK 0.49.0+ |
+| [rtk-rewrite](https://github.com/seamusmore/rtk-rewrite) | 1.3.4 | 原生 PreToolUse hook 自动通过 RTK 改写简单终端命令；要求 Python 3.10+ 和 PATH 中的 RTK；Windows 使用 PowerShell 和 RTK 0.49.0+ |
 
-RTK 条目固定到提交 `3abc25ab1828e18d78e7e300b312fd4c9b3e8cb2`。
-1.3.3 为 Windows Codex 纠正 RTK 的 Claude-only hook 提示，支持受限 PowerShell 输出处理，并在统计数据库打开失败时说明目录权限要求。安装保持用户现有权限配置。
+RTK 条目固定到提交 `3e4776b6975d4654af8abdf17964eb9094665ce6`。
+1.3.4 直接透传 RTK 原始诊断，移除缺失 hook 警告的替换逻辑。`rtk init -g` 默认配置 Claude Code。Windows 受限 PowerShell 兼容处理和统计目录权限提示继续保留，安装保持用户现有权限配置。
 Windows 插件自行处理 RTK 的沙箱目录查询兼容问题，仅为本次子进程补齐路径并恢复已有环境；直接使用原安装的 RTK，全局 PATH、Claude 文件和 Codex 环境配置保持原样。
 包含管道、变量和复合控制语法的命令保留原样。Windows 显式指定其他 shell 时保留原命令。
 统计直接使用 `rtk gain`；只读沙箱仍限制统计数据库写入，持久统计需要单独授权数据目录写权限。
