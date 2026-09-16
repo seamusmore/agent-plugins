@@ -3,5 +3,19 @@
   "interface": {
     "displayName": "Seamus Plugins"
   },
-  "plugins": []
+  "plugins": [
+    {
+      "name": "rtk-rewrite",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/seamusmore/rtk-rewrite.git",
+        "sha": "de2c3c66ccdcbbee33690e417f4227210e5622b5"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
 }
