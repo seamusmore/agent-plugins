@@ -9,7 +9,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/seamusmore/rtk-rewrite.git",
-        "sha": "de2c3c66ccdcbbee33690e417f4227210e5622b5"
+        "sha": "801311c6dbbca42fdeb6b51eed22672d6df58475"
       },
       "policy": {
         "installation": "AVAILABLE",
