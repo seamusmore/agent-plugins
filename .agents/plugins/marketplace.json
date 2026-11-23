@@ -16,6 +16,19 @@
         "authentication": "ON_INSTALL"
       },
       "category": "Productivity"
+    },
+    {
+      "name": "webpage-share",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/seamusmore/hermes-webpage-share.git",
+        "sha": "e6caf4d4a6cd7b9a2aec677cd555fb6ac203c58d"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
     }
   ]
 }
