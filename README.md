@@ -17,9 +17,6 @@ codex plugin add rtk-rewrite@seamusmore
 | 插件 | 版本 | 用途 |
 |---|---|---|
 | [rtk-rewrite](https://github.com/seamusmore/rtk-rewrite) | 1.3.4 | 原生 PreToolUse hook 自动通过 RTK 改写简单终端命令；要求 Python 3.10+ 和 PATH 中的 RTK；Windows 使用 PowerShell 和 RTK 0.49.0+ |
-| [webpage-share](https://github.com/seamusmore/hermes-webpage-share) | 2.2.0 | 将 HTML 上传到配置的网页分享服务，生成分享链接，并支持列出和下载页面。需要 Python 3 和 requests。 |
-
-网页分享插件使用 `codex plugin add webpage-share@seamusmore` 安装，在新的 Codex 会话中说“分享这份 HTML”即可调用。分享服务配置见插件仓库 README。
 
 RTK 条目固定到提交 `3e4776b6975d4654af8abdf17964eb9094665ce6`。
 1.3.4 直接透传 RTK 原始诊断，移除缺失 hook 警告的替换逻辑。`rtk init -g` 默认配置 Claude Code。Windows 受限 PowerShell 兼容处理和统计目录权限提示继续保留，安装保持用户现有权限配置。
